@@ -37,6 +37,7 @@ dependencies:
   - ipywidgets=7.4.2=py_0
   - jedi=0.14.0=py37_0
   - jinja2=2.10.1=py_0
+  - joblib=0.13.2=py_0
   - jpeg=9c=h1de35cc_1001
   - jsonschema=3.0.1=py37_0
   - jupyter=1.0.0=py_2
@@ -124,6 +125,11 @@ dependencies:
   - zipp=0.5.1=py_0
   - zlib=1.2.11=h1de35cc_1004
   - pip:
+    - colorama==0.4.1
+    - gitdb2==2.0.5
+    - gitpython==2.1.11
+    - nbdime==1.0.6
     - nbval==0.9.1
     - python-dotenv==0.10.3
+    - smmap2==2.0.5
 prefix: /anaconda3/envs/bus_number_tutorial
