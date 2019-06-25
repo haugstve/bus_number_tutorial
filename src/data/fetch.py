@@ -90,8 +90,8 @@ def fetch_files(force=False, dst_dir=None, **kwargs):
     --------
     >>> fetch_files()
     Traceback (most recent call last):
-      ...
-    Exception: One of `file_name` or `url` is required
+        ...
+    Exception: One of `file_name`, `url`, or `source_file` is required
     '''
     url_list = kwargs.get('url_list', None)
     if not url_list:
@@ -183,8 +183,8 @@ def fetch_file(url=None, contents=None,
     --------
     >>> fetch_file()
     Traceback (most recent call last):
-      ...
-    Exception: One of `file_name` or `url` is required
+        ...
+    Exception: One of `file_name`, `url`, or `source_file` is required
     '''
     if dst_dir is None:
         dst_dir = raw_data_path
