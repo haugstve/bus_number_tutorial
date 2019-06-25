@@ -98,7 +98,7 @@ clean_workflow:
 
 ## Run all Unit Tests
 test:
-	echo "I still need to be set up!"
+	cd src && pytest --doctest-modules --cov
 
 ## Lint using flake8
 lint:
