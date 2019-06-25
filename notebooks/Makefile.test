@@ -1,0 +1,11 @@
+
+data: raw
+	@echo "Build Datasets"
+train_test_split:
+	@echo "do train/test split"
+train: data transform_data train_test_split
+	@echo "Train Models"
+transform_data:
+	@echo "do a data transformation"
+raw: data
+	@echo "Fetch raw data"
